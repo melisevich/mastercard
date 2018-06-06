@@ -61,14 +61,14 @@ button {
 .primary-button {
   display: inline-block;
   color: #fff;
-  padding: 20px 30px;
+  padding: 20px 48px;
   margin: 10px 20px;
   background-color: #e35107;
   border: none; }
 
 .secondary-button {
   display: inline-block;
-  padding: 20px 30px;
+  padding: 20px 48px;
   margin: 10px 20px;
   color: #fff;
   background-color: #5B676F;
@@ -80,7 +80,8 @@ header nav {
     display: flex;
     margin: auto 16px; }
   header nav .list-inline {
-    height: 26px;
+    justify-content: flex-start;
+    height: 32px;
     background-color: #fff; }
     header nav .list-inline a {
       font-weight: 400;
@@ -93,18 +94,19 @@ header nav {
       font-size: 0.65em;
       padding-right: 0.5em; }
   header nav .main-nav {
+    justify-content: flex-start;
     height: 52px;
     background-color: #F4F4F4; }
     header nav .main-nav li.home {
-      position: inherit;
-      height: 52px;
-      margin: auto 80px;
-      position: center;
-      background: #e35107; }
+      display: inline-block;
+      padding: auto 80px;
+      background-color: #FF9B00; }
     header nav .main-nav .logo {
       float: left;
       margin: auto 16px; }
     header nav .main-nav li {
+      display: inline-block;
+      padding: auto 80px;
       height: 52px;
       font-weight: 400;
       font-size: 1em;
@@ -112,9 +114,11 @@ header nav {
       color: #000;
       text-align: middle right;
       padding-right: 0.5em; }
+      header nav .main-nav li:active {
+        border-bottom: #FF9B00 2px solid; }
       header nav .main-nav li:hover {
         font-weight: 600;
-        text-decoration: underline #e35107 1px solid; }
+        border-bottom: #FF9B00 2px solid; }
 
 /* CONTENT */
 main {
@@ -139,20 +143,20 @@ main {
   width: 900px;
   font-weight: 200;
   font-size: 1em;
-  line-height: 1.25em;
+  line-height: 1.75em;
   letter-spacing: 0.025em;
   color: #5B676F;
   opacity: 75%;
   margin-bottom: 24px; }
 
 .assets-list {
-  margin: 64px auto; }
+  margin: 64px 0px; }
 
 .asset {
   display: flex;
   border-bottom: 1px solid #D0D3D4; }
   .asset .preview {
-    display: inherit;
+    float: left;
     width: 12%; }
   .asset .text-block {
     width: 60%; }
