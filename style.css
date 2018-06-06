@@ -1,0 +1,188 @@
+/* CSS RESET START */
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+/* CSS RESET END */
+@font-face {
+  font-family: Uni Neue;
+  src: url(fonts/SF-Pro-Display-Regular.otf) url(fonts/SF-Pro-Display-Light.otf) url(fonts/SF-Pro-Display-Medium.otf); }
+
+body {
+  font-family: 'Uni Neue', sans-serif;
+  background: #fff; }
+
+h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: #000000;
+  text-align: left; }
+
+h2 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+  text-align: left;
+  letter-spacing: 0.25px; }
+
+h3 {
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+  letter-spacing: 0.04em;
+  text-align: left; }
+
+h4 {
+  font-weight: 200;
+  font-size: 1.125em;
+  line-height: 1.75em;
+  color: #B2B2B2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: left; }
+
+button {
+  font-family: 'Uni Neue', sans-serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center; }
+
+.primary-button {
+  display: inline-block;
+  color: #fff;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  background-color: #e35107;
+  border: none; }
+
+.secondary-button {
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  color: #fff;
+  background-color: #5B676F;
+  border: none; }
+
+header nav {
+  cursor: pointer; }
+  header nav ul {
+    display: flex;
+    margin: auto 16px; }
+  header nav .list-inline {
+    height: 26px;
+    background-color: #fff; }
+    header nav .list-inline a {
+      font-weight: 400;
+      font-size: 0.75em;
+      text-align: left;
+      color: #000000;
+      padding-right: 0.5em; }
+    header nav .list-inline li::after {
+      content: "|";
+      font-size: 0.65em;
+      padding-right: 0.5em; }
+  header nav .main-nav {
+    height: 52px;
+    background-color: #F4F4F4; }
+    header nav .main-nav li.home {
+      position: inherit;
+      height: 52px;
+      margin: auto 80px;
+      position: center;
+      background: #e35107; }
+    header nav .main-nav .logo {
+      float: left;
+      margin: auto 16px; }
+    header nav .main-nav li {
+      height: 52px;
+      font-weight: 400;
+      font-size: 1em;
+      letter-spacing: 0.04em;
+      color: #000;
+      text-align: middle right;
+      padding-right: 0.5em; }
+      header nav .main-nav li:hover {
+        font-weight: 600;
+        text-decoration: underline #e35107 1px solid; }
+
+/* CONTENT */
+main {
+  margin: 120px 120px; }
+
+.title {
+  display: flex;
+  margin-bottom: 32px; }
+  .title.h1 {
+    float: left; }
+  .title .drop-down {
+    position: relative;
+    width: 180px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #000;
+    border: #cccccc 1px solid;
+    border-radius: 4px; }
+
+.h1-description {
+  width: 900px;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1.25em;
+  letter-spacing: 0.025em;
+  color: #5B676F;
+  opacity: 75%;
+  margin-bottom: 24px; }
+
+.assets-list {
+  margin: 64px auto; }
+
+.asset {
+  display: flex;
+  border-bottom: 1px solid #D0D3D4; }
+  .asset .preview {
+    display: inherit;
+    width: 12%; }
+  .asset .text-block {
+    width: 60%; }
+    .asset .text-block .h2-description {
+      font-weight: 200;
+      font-size: 1em;
+      letter-spacing: 0.025em;
+      color: #5B676F;
+      line-height: 1.25em; }
+    .asset .text-block .icon-description {
+      font-weight: 600;
+      font-size: 0.85em;
+      letter-spacing: 0.025em;
+      color: #44937F;
+      text-transform: uppercase; }
+
+.pagination ul {
+  display: flex; }
+
+.pagination li {
+  padding: 12px; }
+
+.pagination a {
+  font-weight: 600;
+  font-size: 20px;
+  color: #e35107; }
+  .pagination a a:active {
+    color: #5B676F;
+    text-decoration: underline; }
+  .pagination a a:hover {
+    color: #5B676F; }
+  .pagination a a:hover:not(.active) {
+    background-color: #d0d3d4; }
